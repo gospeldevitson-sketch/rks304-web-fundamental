@@ -1,0 +1,109 @@
+/* Reset & Styling Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+/* Header & Navigasi */
+header {
+  background: #1e293b;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1,5rem;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  color: #38bdf8;
+}
+
+/* Layout Umum */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1,5rem;
+  background: #1e293b;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Badge Skill / Tech */
+.badge {
+  display: inline-block;
+  background: #e2e8f0;
+  color: #0f172a;
+  padding: 0,3rem 0,6rem;
+  border-radius: 4px;
+  font-size: 0,85rem;
+  margin: 0,2rem;
+}
+
+/* Grid Proyek (portfolio.html) */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1,5rem;
+  margin-top: 1,5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1,5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styling Form (contact.html) */
+.form-group {
+  margin-bottom: 1,2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0,5rem;
+  font-weight: bold;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 0,6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #0284c7;
+  color: #fff;
+  padding: 0,7rem 1,5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0369a1;
+}
