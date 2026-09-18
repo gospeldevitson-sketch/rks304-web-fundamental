@@ -4,48 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Saya - Portfolio</title>
+  <!-- Font Google Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk Ikon Media Sosial -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- File CSS Utama -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Web Profil</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="portfolio.html" class="active">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-container">
+      <h1>Web Profil</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="portfolio-container">
     <h2>Portofolio & Proyek</h2>
-    
-    <div class="project-grid">
-      <!-- Card 1 -->
-      <article class="card">
-        <h3>Proyek Desain Jaringan</h3>
-        <p>Deskripsi ringkas mengenai proyek perancangan topologi jaringan lokal untuk skala kecil.</p>
-        <div style="margin: 0,8rem 0;">
-          <span class="badge">Cisco Packet Tracer</span>
-          <span class="badge">Networking</span>
-        </div>
-        <a href="https://github.com/username/repository" target="_blank">Lihat Repositori</a>
-      </article>
+    <p class="section-desc">Berikut adalah beberapa proyek yang telah saya kerjakan.</p>
 
-      <!-- Card 2 -->
-      <article class="card">
-        <h3>Website Profil Pribadi</h3>
-        <p>Pembuatan website statis menggunakan HTML semantik dan CSS murni tanpa framework.</p>
-        <div style="margin: 0,8rem 0;">
-          <span class="badge">HTML</span>
-          <span class="badge">CSS</span>
+    <!-- Wadah Kartu Proyek (Grid) -->
+    <div class="project-grid">
+
+      <!-- Kartu Proyek 1 -->
+      <div class="project-card">
+        <div class="card-body">
+          <h3>Proyek Desain Jaringan</h3>
+          <p>Deskripsi ringkas mengenai proyek perancangan topologi jaringan lokal untuk skala kecil.</p>
+          <div class="tags">
+            <span>Cisco Packet Tracer</span>
+            <span>Networking</span>
+          </div>
+          <a href="#" class="repo-link" target="_blank">Lihat Repositori <i class="fas fa-arrow-right"></i></a>
         </div>
-        <a href="https://github.com/username/repository" target="_blank">Lihat Repositori</a>
-      </article>
+      </div>
+
+      <!-- Kartu Proyek 2 -->
+      <div class="project-card">
+        <div class="card-body">
+          <h3>Website Profil Pribadi</h3>
+          <p>Pembuatan website statis menggunakan HTML semantik dan CSS murni tanpa framework.</p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <a href="#" class="repo-link" target="_blank">Lihat Repositori <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 Nama Kamu. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/Gospel Devitson Gultom" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/Gospel Gultom" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/gspl_gltm" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2026 <span>Gospel Devitson Gultom</span>. All rights reserved.</p>
   </footer>
+
 </body>
 </html>

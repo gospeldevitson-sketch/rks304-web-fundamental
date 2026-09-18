@@ -1,52 +1,146 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Profil Saya - Home</title>
+
+  <!-- Font Google Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS Utama -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ================= HEADER ================= -->
+
   <header>
-    <h1>Web Profil</h1>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-container">
+
+      <h1>Web Profil</h1>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="assets/profile.jpg" alt="Foto Profil" width="150" style="border-radius: 50%;">
-      <h2>Gospel Devitson Gultom </h2>
-      <p><strong>Peran / Gelar:</strong> Mahasiswa Rekayasa Keamanan Siber</p>
-      <p>Ringkasan bio singkat tentang latar belakang, minat di bidang teknologi, dan tujuan karir kamu.</p>
-    </section>
 
-    <hr style="margin: 2rem 0;">
+  <!-- ================= MAIN ================= -->
 
-    <!-- About & Skills Section -->
-    <section class="about-skills">
-      <h3>Keahlian Teknis</h3>
-      <div>
-        <span class="badge">HTML5</span>
-        <span class="badge">CSS3</span>
-        <span class="badge">JavaScript</span>
-        <span class="badge">Network Security</span>
+  <main class="main-container">
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+
+      <!-- FOTO PROFIL DARI FOLDER ASSETS -->
+      <img
+        src="assets/profile.png"
+        alt="Gospel Devitson Gultom"
+        class="profile-img"
+      >
+
+      <div class="profile-info">
+
+        <h2>Gospel Devitson Gultom</h2>
+
+        <p class="role">
+          Mahasiswa D4 Rekayasa Keamanan Siber
+        </p>
+
       </div>
 
-      <h3 style="margin-top: 1,5rem;">Pendidikan & Pengalaman</h3>
-      <ul>
-        <li><strong>Politeknik Negeri Batam</strong> - D4 Rekayasa Keamanan Siber (2025 - Sekarang)</li>
-        <li><strong> Sekarang </strong> - (2025)</li>
-      </ul>
-    </section>
+    </div>
+
+
+    <!-- Informasi -->
+    <div class="info-section">
+
+      <h3>Keahlian Teknis</h3>
+
+      <div class="skills-tags">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Network Security</span>
+      </div>
+
+
+      <hr class="divider">
+
+
+      <h3>Pendidikan &amp; Pengalaman</h3>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <h4>Politeknik Negeri Batam</h4>
+
+          <p>
+            D4 Rekayasa Keamanan Siber (2025 – Sekarang)
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </main>
 
+
+  <!-- ================= FOOTER ================= -->
+
   <footer>
-    <p>&copy; 2026 Nama Kamu. All rights reserved.</p>
+
+    <div class="footer-socials">
+
+      <a
+        href="https://github.com"
+        target="_blank"
+        title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a
+        href="https://linkedin.com"
+        target="_blank"
+        title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        href="https://instagram.com"
+        target="_blank"
+        title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+    </div>
+
+    <p>
+      &copy; 2026
+      <span>Gospel Devitson Gultom</span>.
+      All rights reserved.
+    </p>
+
   </footer>
+
 </body>
+
 </html>
